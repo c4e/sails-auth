@@ -10,6 +10,9 @@ module.exports = {
       index: true,
       notNull: true
     },
+    photo: {
+      type: 'string'
+    },
     email: {
       type: 'email',
       unique: true,

@@ -93,6 +93,9 @@ if (sails.services.passport) {
     if (profile.emails && profile.emails[0]) {
       user.email = profile.emails[0].value;
     }
+    if (profile.photos && profile.photos[0]) {
+      user.photo = profile.photos[0].value;
+    }
     // If the profile object contains a username, add it to the user.
     if (_.has(profile, 'username')) {
       user.username = profile.username;
